@@ -1,0 +1,14 @@
+graphql_gateway:
+  hosts: [ ]
+growing_analysis_java:
+  hosts: [ ]
+growing_iam:
+  hosts: [ ]
+growing_platform:
+  hosts: [ ]
+growing_meta:
+  hosts: [ ]
+growing_user:
+  hosts: [ ]
+user_aggregate:
+  hosts: [ ]

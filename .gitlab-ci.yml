@@ -1,0 +1,11 @@
+buildpack:
+  stage: build
+  variables:
+    IMAGE_TAG: "akgo-python-helper:latest"
+    REMOTE_IMAGE_TAG: "uhub.service.ucloud.cn/gcnbs/akgo-python-helper:latest"
+  tags:
+    - buildpack
+  script:
+    - "pack build $IMAGE_TAG --builder paketobuildpacks/builder:base"
+    - "docker tag $IMAGE_TAG $REMOTE_IMAGE_TAG"
+    - "docker push $REMOTE_IMAGE_TAG"
